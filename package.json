@@ -3,8 +3,14 @@
 	"license": "SEE LICENSE IN <your-license-filename>",
 	"readme": "NativeScript Application",
 	"repository": "<fill-your-repository-here>",
+	"scripts": {
+		"generator": "gql-gen --url http://localhost:3000/graphql --template ts --out ./app/types.d.ts \"./app/graphql/**/*.ts\""
+	},
 	"nativescript": {
-		"id": "org.nativescript.whatsappclientnativescript"
+		"id": "org.nativescript.whatsappclientnativescript",
+		"tns-android": {
+			"version": "4.0.0"
+		}
 	},
 	"dependencies": {
 		"@angular/animations": "~5.2.0",
@@ -16,14 +22,35 @@
 		"@angular/platform-browser": "~5.2.0",
 		"@angular/platform-browser-dynamic": "~5.2.0",
 		"@angular/router": "~5.2.0",
+		"apollo-angular": "^1.0.1",
+		"apollo-angular-link-http": "^1.0.2",
+		"apollo-cache-inmemory": "^1.1.12",
+		"apollo-client": "^2.2.8",
+		"apollo-link": "^1.2.2",
+		"apollo-link-ws": "^1.0.8",
+		"apollo-utilities": "^1.0.11",
+		"base-64": "^0.1.0",
+		"graphql": "^0.13.2",
+		"graphql-tag": "^2.8.0",
 		"nativescript-angular": "~5.3.0",
 		"nativescript-theme-core": "~1.0.4",
+		"nativescript-websockets": "^1.4.0",
+		"ngx-selectable-list": "file:ngx",
 		"reflect-metadata": "~0.1.8",
 		"rxjs": "~5.5.2",
+		"subscriptions-transport-ws": "file:sub",
 		"tns-core-modules": "~4.0.0",
 		"zone.js": "~0.8.2"
 	},
 	"devDependencies": {
+		"@types/base-64": "^0.1.2",
+		"@types/node": "^9.6.5",
+		"babel-traverse": "6.26.0",
+		"babel-types": "6.26.0",
+		"babylon": "6.18.0",
+		"graphql-code-generator": "^0.8.21",
+		"lazy": "1.0.11",
+		"nativescript-dev-sass": "^1.5.0",
 		"nativescript-dev-typescript": "~0.7.0",
 		"typescript": "~2.7.2"
 	}

@@ -5,6 +5,7 @@ tags
 **/*.metadata.json
 
 /hooks
+/platforms
 
 .tscache
 .nvm

@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = require("tslib");
+var graphql_tag_1 = require("graphql-tag");
+var fragment_1 = require("./fragment");
+// We use the gql tag to parse our query string into a query document
+exports.getChatsQuery = graphql_tag_1.default(templateObject_1 || (templateObject_1 = tslib_1.__makeTemplateObject(["\n  query GetChats($amount: Int) {\n    chats {\n      ...ChatWithoutMessages\n      messages(amount: $amount) {\n        ...Message\n      }\n    }\n  }\n\n  ", "\n  ", "\n"], ["\n  query GetChats($amount: Int) {\n    chats {\n      ...ChatWithoutMessages\n      messages(amount: $amount) {\n        ...Message\n      }\n    }\n  }\n\n  ", "\n  ", "\n"])), fragment_1.fragments['chatWithoutMessages'], fragment_1.fragments['message']);
+var templateObject_1;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0Q2hhdHMucXVlcnkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJnZXRDaGF0cy5xdWVyeS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwyQ0FBOEI7QUFDOUIsdUNBQXFDO0FBRXJDLHFFQUFxRTtBQUN4RCxRQUFBLGFBQWEsR0FBRyxxQkFBRywwUEFBQSxpS0FVNUIsRUFBZ0MsTUFDaEMsRUFBb0IsSUFDdkIsS0FGRyxvQkFBUyxDQUFDLHFCQUFxQixDQUFDLEVBQ2hDLG9CQUFTLENBQUMsU0FBUyxDQUFDLEVBQ3RCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGdxbCBmcm9tICdncmFwaHFsLXRhZyc7XG5pbXBvcnQge2ZyYWdtZW50c30gZnJvbSAnLi9mcmFnbWVudCc7XG5cbi8vIFdlIHVzZSB0aGUgZ3FsIHRhZyB0byBwYXJzZSBvdXIgcXVlcnkgc3RyaW5nIGludG8gYSBxdWVyeSBkb2N1bWVudFxuZXhwb3J0IGNvbnN0IGdldENoYXRzUXVlcnkgPSBncWxgXG4gIHF1ZXJ5IEdldENoYXRzKCRhbW91bnQ6IEludCkge1xuICAgIGNoYXRzIHtcbiAgICAgIC4uLkNoYXRXaXRob3V0TWVzc2FnZXNcbiAgICAgIG1lc3NhZ2VzKGFtb3VudDogJGFtb3VudCkge1xuICAgICAgICAuLi5NZXNzYWdlXG4gICAgICB9XG4gICAgfVxuICB9XG5cbiAgJHtmcmFnbWVudHNbJ2NoYXRXaXRob3V0TWVzc2FnZXMnXX1cbiAgJHtmcmFnbWVudHNbJ21lc3NhZ2UnXX1cbmA7XG4iXX0=

@@ -1,0 +1,7 @@
+<StackLayout [formGroup]="signInForm">
+    <TextField formControlName="username" hint="Email Address" keyboardType="email"
+      autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField formControlName="password" hint="Password" secure="true"></TextField>
+
+    <Button text="Sign in" (tap)="signIn()"></Button>
+</StackLayout>

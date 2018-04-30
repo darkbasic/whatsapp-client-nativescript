@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = require("tslib");
+var graphql_tag_1 = require("graphql-tag");
+var fragment_1 = require("./fragment");
+// We use the gql tag to parse our query string into a query document
+exports.addMessageMutation = graphql_tag_1.default(templateObject_1 || (templateObject_1 = tslib_1.__makeTemplateObject(["\n  mutation AddMessage($chatId: ID!, $content: String!) {\n    addMessage(chatId: $chatId, content: $content) {\n      ...Message\n    }\n  }\n\n  ", "\n"], ["\n  mutation AddMessage($chatId: ID!, $content: String!) {\n    addMessage(chatId: $chatId, content: $content) {\n      ...Message\n    }\n  }\n\n  ", "\n"])), fragment_1.fragments['message']);
+var templateObject_1;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWRkTWVzc2FnZS5tdXRhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImFkZE1lc3NhZ2UubXV0YXRpb24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMkNBQThCO0FBQzlCLHVDQUFxQztBQUVyQyxxRUFBcUU7QUFDeEQsUUFBQSxrQkFBa0IsR0FBRyxxQkFBRyx1T0FBQSxzSkFPakMsRUFBb0IsSUFDdkIsS0FERyxvQkFBUyxDQUFDLFNBQVMsQ0FBQyxFQUN0QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBncWwgZnJvbSAnZ3JhcGhxbC10YWcnO1xuaW1wb3J0IHtmcmFnbWVudHN9IGZyb20gJy4vZnJhZ21lbnQnO1xuXG4vLyBXZSB1c2UgdGhlIGdxbCB0YWcgdG8gcGFyc2Ugb3VyIHF1ZXJ5IHN0cmluZyBpbnRvIGEgcXVlcnkgZG9jdW1lbnRcbmV4cG9ydCBjb25zdCBhZGRNZXNzYWdlTXV0YXRpb24gPSBncWxgXG4gIG11dGF0aW9uIEFkZE1lc3NhZ2UoJGNoYXRJZDogSUQhLCAkY29udGVudDogU3RyaW5nISkge1xuICAgIGFkZE1lc3NhZ2UoY2hhdElkOiAkY2hhdElkLCBjb250ZW50OiAkY29udGVudCkge1xuICAgICAgLi4uTWVzc2FnZVxuICAgIH1cbiAgfVxuXG4gICR7ZnJhZ21lbnRzWydtZXNzYWdlJ119XG5gO1xuIl19
